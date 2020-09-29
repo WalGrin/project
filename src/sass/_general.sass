@@ -1,0 +1,427 @@
+header 
+	position: relative 
+	height: 50px 
+nav 
+	position: fixed 
+	width: 100% 
+	height: 50px 
+	background-color: #212121 
+	z-index: 2 
+.hamburger
+    display: none
+.menu 
+	display: flex 
+	justify-content: space-between 
+	padding: 13px 70px 
+	margin: 0 
+	list-style-type: none 
+	&_link 
+		font-size: 15px 
+		font-weight: 300 
+		color: #ffffff 
+	&_item 
+		border-right: 2px dotted black 
+		padding-right: 28px
+.subheader 
+	position: absolute 
+	width: 100% 
+	min-height: 84px 
+	top: 50px 
+	background-color: rgba(0, 0, 0, .6) 
+	&_logo 
+		display: block 
+		max-width: 100% 
+		margin-top: 16px 
+	&_official 
+		margin-top: 6px 
+		font-size: 13px 
+		font-weight: 400 
+		color: rgba(255, 255, 255, 0.5) 
+	&_call 
+		margin-top: 19px 
+		font-size: 12px 
+		font-weight: 300 
+		text-align: right 
+		color: #ffffff 
+	&_phone 
+		display: block 
+		margin-top: 8px 
+		font-size: 22px 
+		font-weight: 300 
+		text-align: right 
+		color: #ffffff 
+		line-height: 12px 
+	&_btn 
+		display: block 
+		margin-top: 19px 
+		width: 182px 
+		height: 46px 
+		box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12) 
+		border: none 
+		border-radius: 4px 
+		background-image: linear-gradient(to top, #1eacc7, #4ce2ff) 
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) 
+		font-size: 14px 
+		font-weight: 400 
+		color: #ffffff 
+		text-transform: uppercase
+		+btn_hover 
+.promo 
+	height: 800px 
+	background: url('../img/rychka.jpg') center center/cover no-repeat 
+	padding: 150px 0 135px 0 
+	&_header 
+		font-size: 60px 
+		line-height: 60px 
+		font-weight: 700 
+		text-align: center 
+		text-transform: uppercase 
+		margin: 0 
+		color: #ffffff 
+	&_subheader 
+		font-size: 36px 
+		line-height: 36px 
+		font-weight: 700 
+		text-align: center 
+		text-transform: uppercase 
+		color: #ffffff 
+		margin: 0 
+		margin-top: 22px 
+	&_descr 
+		font-size: 18px 
+		font-weight: 300 
+		margin-top: 23px 
+		line-height: 24px 
+		text-align: center 
+		color: #ffffff 
+	&_btn 
+		display: block 
+		margin: 118px auto 0 auto 
+		width: 259px 
+		height: 63px 
+		box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12) 
+		border: none 
+		border-radius: 4px 
+		background-image: linear-gradient(to top, #1eacc7, #4ce2ff) 
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) 
+		font-size: 18px 
+		font-weight: 400 
+		color: #ffffff 
+		+btn_hover
+
+
+.preim, .mobile, .wibor, .require, .mir
+	min-height: 900px 
+	background-color: #ffffff 
+	padding: 71px 0 34px 0 
+	.element 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		margin: 0 auto 
+		width: 112px 
+		height: 24px 
+		background-color: #000000 
+		.teks 
+			display: flex 
+			justify-content: center 
+			align-items: center 
+			font-size: 11px 
+			font-weight: 100 
+			text-align: center 
+			text-transform: uppercase 
+			color: #ffffff 
+	.preim_sub 
+		margin: auto 223px 
+		margin-top: 44px 
+		font-size: 36px 
+		font-weight: 700 
+		text-align: center 
+		text-transform: uppercase 
+		color: #222222 
+	.reasons_block 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		margin-top: 35px 
+	.kryg 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		margin-right: 26px 
+		width: 113px 
+		height: 113px 
+		background-color: #1eacc7 
+		border-radius: 100% 
+	.descr_elementow 
+		width: 343px 
+		color: #202020 
+		font-size: 15px 
+		font-weight: 300 
+		line-height: 21px 
+		.zagl 
+			line-height: 21px 
+			color: #1eacc7 
+			font-size: 17px 
+			font-weight: 400
+.mobile
+	min-height: 864px
+	padding: 48px 0 79px 0
+	background: url('../img/mobile_fon.jpg') center center/cover no-repeat 
+	.row
+		margin-top: 32px
+	.subtitle
+		font-size: 17px
+		margin-top: 19px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.24
+		letter-spacing: normal
+		text-align: center
+		color: #222222
+	&_item
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		margin-bottom: 19px
+		padding-top: 92px
+		&_1
+			background: url('../img/navi.jpg') center center/cover no-repeat 
+		&_2
+			background: url('../img/podacha.jpg') center center/cover no-repeat 
+		&_3
+			background: url('../img/prozrachnie.jpg') center center/cover no-repeat 
+		&_4
+			background: url('../img/beznal.jpg') center center/cover no-repeat
+		&_5
+			background: url('../img/obratnaia.jpg') center center/cover no-repeat			
+		&_6
+			background: url('../img/razdelit.jpg') center center/cover no-repeat
+		&_subtitle
+			font-size: 24px
+			font-weight: 400
+			line-height: 31px
+			text-align: center
+			text-transform: uppercase
+			color: #ffffff
+		&_plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			width: 26px
+			height: 26px
+			background-color: #000000
+			margin: 0 auto
+			border-radius: 100%
+			padding: 6px
+			cursor: pointer
+			&::before
+				content: ''
+				display: block 
+				width: 14px
+				height: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block 
+				width: 2px
+				height: 14px
+				background-color: $main-color
+				transition: 0.3s all
+			&:hover
+				&::before, &::after
+					background-color: $second-color
+
+.wibor
+	min-height: 895px
+	position: relative
+	padding: 57px 0 138px 0
+	background: #070716
+	.element 
+		background-color: #ffffff 
+		.teks 
+			color: #000000
+	.preim_sub 
+		margin-top: 32px
+		color: #ffffff 
+	.subtitle
+		font-size: 17px
+		margin-top: 19px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.24
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff 
+	.uberx
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		margin-top: 56px
+		z-index: 2
+	.back_1
+		position: absolute 
+		top: 498px
+		left: 0
+		height: 397px
+		width: 100%
+		background: url('../img/set.jpg') center center/cover no-repeat
+		z-index: 1
+		.decrmash
+			  margin-top: 240px
+			  font-size: 17px
+			  font-weight: 300
+			  line-height: 24px
+			  text-align: center
+			  color: #222222
+.require
+	box-sizing: border-box;
+	min-height: 680px
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		font-size: 22px
+  		font-weight: 400
+  		color: #1ca8c3
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li 
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ""
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../icons/singalochka.png') center center/cover no-repeat
+	&_descr
+		color: #1ca8c3
+	.warning
+		.require_title
+				color: $second-color
+		.require_list
+			li 
+				&::before
+					background: url('../icons/kragalochka.png') center center/cover no-repeat
+.mir
+	min-height: 717px
+	padding: 49px 0 49px 0
+	background: url('../img/mir.jpg') center center/cover no-repeat
+	.element 
+		background-color: #ffffff 
+		.teks 
+			color: #000000
+	.preim_sub 
+		margin-top: 32px
+		color: #ffffff 
+	.subtitle
+		font-size: 17px
+		margin-top: 19px
+		font-weight: normal
+		font-stretch: normal
+		font-style: normal
+		line-height: 1.24
+		letter-spacing: normal
+		text-align: center
+		color: #ffffff 
+	&_descr
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 486px
+		a 
+			font-size: 15px
+			font-weight: 300
+			line-height: 4.53
+			text-align: center
+			text-transform: uppercase
+			color: #1fbad6
+footer 
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px		
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
